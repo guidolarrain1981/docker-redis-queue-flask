@@ -49,7 +49,7 @@ count      |   GET    |   (5)
 ### Monitoring
 
 ```sh
-$ docker exec -it flask-redis-queue_redis_1 redis-cli monitor
+$ docker exec -it docker-redis-queue-flask_redis_1 redis-cli monitor
 ```
 
 ### Notes
