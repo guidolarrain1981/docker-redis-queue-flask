@@ -2,12 +2,12 @@
 
 Project that implements a Flask API & Redis Queue on Docker containers
 
-RQ Dashboard is included
+Dashboard is included
 
 ### Requirements
 
-- Python
-- Docker
+- Docker (v:18.06.0+)
+- Docker-Compose (v:1.13.0+)
 
 ### Usage
 
@@ -27,9 +27,11 @@ dashboard                | 9181 | 9181
 
 ### URLs
 
-http://localhost:5004 [WEB] | http://localhost:9181 [DASHBOARD]
+http://localhost:5004 [WEB]
 
-## Table of Methods
+http://localhost:9181 [DASHBOARD]
+
+## Table of Endpoints
 Name       |  Method  |  Usage  |
 :---------:|:--------:|:--------:
 tasks      |   POST   |   (1)   
@@ -54,4 +56,4 @@ $ docker exec -it docker-redis-queue-flask_redis_1 redis-cli monitor
 
 ### Notes
 
-This deploys a complete Redis Queue and Flask app plus an RQ Dashboard using docker images forked from https://github.com/mjhea0/flask-redis-queue
+This deploys a complete Redis Queue and Flask app plus a Dashboard using docker images based on https://github.com/mjhea0/flask-redis-queue
