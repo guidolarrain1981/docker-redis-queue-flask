@@ -27,14 +27,13 @@ dashboard                | 9181 | 9181
 
 ### URLs
 
-http://localhost:5004 [WEB]
-http://localhost:9181 [DASHBOARD]
+http://localhost:5004 [WEB] | http://localhost:9181 [DASHBOARD]
 
 ## Table of Methods
 Name       |  Method  |  Usage  |
 :---------:|:--------:|:--------:
 tasks      |   POST   |   (1)   
-tasks/<ID> |   GET    |   (2)   
+tasks/ID   |   GET    |   (2)   
 pop        |   POST   |   (3)   
 push       |   POST   |   (4)   
 count      |   GET    |   (5)   
